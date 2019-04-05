@@ -23,7 +23,6 @@ function addHologram(hologram) {
   })
     .then(checkStatus)
     .then(parseJSON)
-    .then(result => console.log('add',  JSON.stringify(result, null, 2)))
 }
 function deleteHologram(id) {
   return fetch(`https://us-central1-harshal-playground.cloudfunctions.net/app/hologram/${id}`, {
